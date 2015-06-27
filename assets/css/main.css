@@ -265,8 +265,11 @@
 	}
 
 	#bg {
-		background-size: 2250px auto;
-		width: 6750px;
+		background-size: auto, cover;
+		background-repeat: no-repeat;
+		position: fixed;
+		height: 100%;
+
 	}
 
 /* Overlay */
