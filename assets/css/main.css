@@ -165,6 +165,13 @@
 		}
 	}
 
+	#wrapper.fast {
+		-moz-animation: wrapper 0s forwards !important;
+		-webkit-animation: wrapper 0s forwards !important;
+		-ms-animation: wrapper 0s forwards !important;
+		animation: wrapper 0s forwards !important;
+	}
+
 	#wrapper {
 		-moz-animation: wrapper 2.25s forwards;
 		-webkit-animation: wrapper 2.25s forwards;
@@ -302,6 +309,13 @@
 		100% {
 			opacity: 0.5;
 		}
+	}
+
+	#overlay.fast {
+		-moz-animation: overlay 0s 0s forwards !important;
+		-webkit-animation: overlay 0s 0s forwards !important;
+		-ms-animation: overlay 0s 0s forwards !important;
+		animation: overlay 0s 0s forwards !important;
 	}
 
 	#overlay {
@@ -488,6 +502,13 @@
 		}
 	}
 
+	#header.fast {
+		-moz-animation: header 0s 0s forwards !important;
+		-webkit-animation: header 0s 0s forwards !important;
+		-ms-animation: header 0s 0s forwards !important;
+		animation: header 0s 0s forwards !important;
+	}
+
 	#header {
 		-moz-animation: header 0.5s 2s forwards;
 		-webkit-animation: header 0.5s 2s forwards;
@@ -543,12 +564,12 @@
 			left: 15px;
 			top: 15px;
 		}
-
+			
 			#home nav li {
-				-moz-animation: nav-icons 0.25s ease-in-out forwards;
-				-webkit-animation: nav-icons 0.25s ease-in-out forwards;
-				-ms-animation: nav-icons 0.25s ease-in-out forwards;
-				animation: nav-icons 0.25s ease-in-out forwards;
+				-moz-animation: nav-icons 0s ease-in-out forwards;
+				-webkit-animation: nav-icons 0s ease-in-out forwards;
+				-ms-animation: nav-icons 0s ease-in-out forwards;
+				animation: nav-icons 0s ease-in-out forwards;
 				-moz-backface-visibility: hidden;
 				-webkit-backface-visibility: hidden;
 				-ms-backface-visibility: hidden;
@@ -567,73 +588,10 @@
 			}
 
 				#home nav li:nth-child(1) {
-					-moz-animation-delay: 2s;
-					-webkit-animation-delay: 2s;
-					-ms-animation-delay: 2s;
-					animation-delay: 2s;
-				}
-
-				#home nav li:nth-child(2) {
-					-moz-animation-delay: 2.25s;
-					-webkit-animation-delay: 2.25s;
-					-ms-animation-delay: 2.25s;
-					animation-delay: 2.25s;
-				}
-
-				#home nav li:nth-child(3) {
-					-moz-animation-delay: 2.5s;
-					-webkit-animation-delay: 2.5s;
-					-ms-animation-delay: 2.5s;
-					animation-delay: 2.5s;
-				}
-
-				#home nav li:nth-child(4) {
-					-moz-animation-delay: 2.75s;
-					-webkit-animation-delay: 2.75s;
-					-ms-animation-delay: 2.75s;
-					animation-delay: 2.75s;
-				}
-
-				#home nav li:nth-child(5) {
-					-moz-animation-delay: 3s;
-					-webkit-animation-delay: 3s;
-					-ms-animation-delay: 3s;
-					animation-delay: 3s;
-				}
-
-				#home nav li:nth-child(6) {
-					-moz-animation-delay: 3.25s;
-					-webkit-animation-delay: 3.25s;
-					-ms-animation-delay: 3.25s;
-					animation-delay: 3.25s;
-				}
-
-				#home nav li:nth-child(7) {
-					-moz-animation-delay: 3.5s;
-					-webkit-animation-delay: 3.5s;
-					-ms-animation-delay: 3.5s;
-					animation-delay: 3.5s;
-				}
-
-				#home nav li:nth-child(8) {
-					-moz-animation-delay: 3.75s;
-					-webkit-animation-delay: 3.75s;
-					-ms-animation-delay: 3.75s;
-					animation-delay: 3.75s;
-				}
-
-				#home nav li:nth-child(9) {
-					-moz-animation-delay: 4s;
-					-webkit-animation-delay: 4s;
-					-ms-animation-delay: 4s;
-					animation-delay: 4s;
-				}
-
-				#home nav li:nth-child(10) {
-					-moz-animation-delay: 4.25s;
-					-webkit-animation-delay: 4.25s;
-					-ms-animation-delay: 4.25s;
-					animation-delay: 4.25s;
+					-moz-animation-delay: 0s;
+					-webkit-animation-delay: 0s;
+					-ms-animation-delay: 0s;
+					animation-delay: 0s;
 				}
 
 			#home nav a {
@@ -686,6 +644,13 @@
 		#header nav {
 			margin: 1.5em 0 0 0;
 		}
+		
+			#header.fast nav li {
+				-moz-animation: nav-icons 0s ease-in-out forwards !important;
+				-webkit-animation: nav-icons 0s ease-in-out forwards !important;
+				-ms-animation: nav-icons 0s ease-in-out forwards !important;
+				animation: nav-icons 0s ease-in-out forwards !important;
+			}
 
 			#header nav li {
 				-moz-animation: nav-icons 0.5s ease-in-out forwards;
