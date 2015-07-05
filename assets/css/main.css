@@ -190,10 +190,10 @@
 		-ms-transform: translate3d(0,0,0);
 		transform: translate3d(0,0,0);
 	/* Set your background with this */
-		background-size: auto, cover;
 		background-repeat: no-repeat;
 		height: 100%;
-		background: #fff url("images/bg.jpg");
+		width: 100%;
+		background: #000 url("images/bg.jpg");
 		opacity: 1;
 		position: fixed;
 	}
