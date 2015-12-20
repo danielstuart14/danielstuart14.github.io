@@ -47,14 +47,14 @@
 	body {
 		-webkit-text-size-adjust: none;
 	}
-	
+
 	#text {
   		color: white;
   		font-family: 'Source Sans Pro', sans-serif;
   		font-size: 16pt;
-		text-shadow: 2px 2px rgba(6, 6, 6, 0.75);
+  		text-shadow: 2px 2px rgba(6, 6, 6, 0.75);
   		letter-spacing: -0.025em;
-  		line-height: 1.75em;
+  		line-height: 1px;
 	}
 
 /* Box Model */
@@ -536,16 +536,17 @@
 			font-size: 4.35em;
 			font-weight: 900;
 			letter-spacing: -0.035em;
-			line-height: 1em;
+			line-height: 70px;
 			opacity: 0.90;
-  			text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+			text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
 		}
-		
+
 		#header center h2 {
 			font-size: 1.2em;
-			line-height: 1em;
+			line-height: 20px;
+			margin: 0.75em 0 0.25em 0;
 			opacity: 1;
-  			text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+			text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
 		}
 
 		#header p {
@@ -553,18 +554,25 @@
 			margin: 0.75em 0 0.25em 0;
 			opacity: 0.75;
 		}
-		
+
 		#logo {
-			position: relative;
+			border-radius: 50%;
+			-webkit-transition: -webkit-transform .4s ease-in-out;
+			transition: transform .4s ease-in-out;
 		}
-		
+
+		#logo:hover {
+			-webkit-transform: rotate(360deg);
+			transform: rotate(360deg);
+		}
+
 		#home {
 			margin: 1.5em 0 0 0;
 			position: fixed;
 			left: 15px;
 			top: 15px;
 		}
-			
+
 			#home nav li {
 				-moz-animation: nav-icons 0s ease-in-out forwards;
 				-webkit-animation: nav-icons 0s ease-in-out forwards;
@@ -644,7 +652,7 @@
 		#header nav {
 			margin: 1.5em 0 0 0;
 		}
-		
+
 			#header.fast nav li {
 				-moz-animation: nav-icons 0s ease-in-out forwards !important;
 				-webkit-animation: nav-icons 0s ease-in-out forwards !important;
@@ -747,6 +755,9 @@
 			#header nav a {
 				-webkit-tap-highlight-color: transparent;
 				-webkit-touch-callout: none;
+				border-radius: 50%;
+				-webkit-transition: -webkit-transform .2s ease-in-out;
+				transition: transform .2s ease-in-out;
 				border: 0;
 				display: inline-block;
 			}
@@ -770,6 +781,8 @@
 
 				#header nav a:hover {
 					font-size: 1.1em;
+					-webkit-transform: rotate(360deg);
+					transform: rotate(360deg);
 				}
 
 					#header nav a:hover:before {
@@ -981,7 +994,7 @@
 			body, input, select, textarea {
 				font-size: 11pt;
 			}
-			
+
 			#logo {
 				display: none;
 			}
@@ -1078,7 +1091,7 @@
 /* Mobile (Portrait) */
 
 	@media screen and (max-width: 480px) {
-		
+
 			#logo {
 				display: none;
 			}
